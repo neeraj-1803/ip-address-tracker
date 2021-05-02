@@ -1,3 +1,8 @@
+# IP Address Tracker
+To get the IP Address locations, we'll be using the IP Geolocation API by IPify. To generate the map, we are using LeafletJS. A user can:
+- See their own IP address on the map on the initial page load
+- Search for any IP addresses or domains and see the key information and location
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
