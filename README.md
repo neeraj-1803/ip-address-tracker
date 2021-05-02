@@ -1,5 +1,5 @@
 # IP Address Tracker
-To get the IP Address locations, we'll be using the IP Geolocation API by IPify. To generate the map, we are using LeafletJS. A user can:
+To get the IP Address locations, we'll be using the IP Geolocation API by IPify(https://geo-database.ipify.org/). To generate the map, we are using LeafletJS(https://leafletjs.com/). A user can:
 - See their own IP address on the map on the initial page load
 - Search for any IP addresses or domains and see the key information and location
 
