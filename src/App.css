@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Encode Sans Expanded', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+  margin-top: 0;
+  top: 0;
+  height: 100%;
+  position: relative;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.backgr{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  height: 250px;
+  position: relative;
+  background:url('./images/pattern-bg.png') center center no-repeat;
+  background-size: 100% 100%;
+  background-position: top center;
+  width: 100%;
+}
+
+.header-main{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 3;
+}
+
+.search{
+  width: 100%;
+}
+
+.search h1{
+  color: #fff;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.form-ele{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.form-ele input[type="text"]{
+  width: 500px;
+  height: 50px;
+  border: 1px transparent;
+  outline: none;
+  border-radius: 12px;
+  padding-left: 10px;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button{
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: black;
+  margin-left: -12px;
+  border: 1px transparent;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+}
+
+.button img{
+  display: block;
+  margin: 18px auto;
+}
+
+.ip-addr{
+  margin: 0 auto;
+  width: 700px;
+  position: relative;
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 3;
+  background-color: #fff;
+  border: 1px transparent;
+  border-radius: 10px;
+  padding: 0 40px;
+  z-index: 3;
+}
+
+.ip-addr .row, .ip-addr .row2{
+  position: relative;
+  padding: 20px 20px;
+}
+
+.ip-addr .row:after {
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 25%;
+  width  : 1px;
+  height   : 50%;  /* or 100px */
+  background: gray;
+}
+
+.ip-addr h3{
+  color: gray;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.ip-addr h1{
+  padding-top: 10px;
+  font-size: 20px;
+  color: #000022;
+}
+
+.maps{
+  position: relative;
+  height: 70vh;
+  z-index: 1;
+}
+
+.ip-addr-hdr{
+  width: 100%;
+  position: absolute;
+  top: 200px;
+  left: 0;
 }
